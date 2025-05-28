@@ -1,1 +1,194 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body{
+    margin: 15px;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+}
+
+.cart{
+    width: 70%;
+}
+
+.total-cost{
+    width: 30%;
+}
+
+.total-cost-heading{
+    text-align: center;
+}
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+}
+
+.product-card{
+    width: 18rem;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    padding: 10px;
+    gap: 10px;
+}
+
+.product-image{
+  height: 200px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.product-title{
+  font-size: 0.8rem;
+  font-weight: 800;
+  border-top: 1px solid #000;
+  padding-top: 10px;
+}
+
+.addBtn{
+    width: 100%;
+    border-radius: none;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.loader-div{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Loader CSS */
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  border: 8px solid;
+  border-color: #000 #0000;
+  animation: l1 1s infinite;
+}
+@keyframes l1 {to{transform: rotate(.5turn)}}
+
+ /* Cart Css */
+
+.cart-product-card{
+    width: 100%;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+}
+
+.cart-product-info{
+    width: 100%;
+}
+
+.buttons{
+    height: 1.8rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+    background-color: lightgray;
+}
+
+#btn{
+    width: 30px;
+    cursor: pointer;
+    font-size: larger;
+}
+
+.remove-and-wishlist{
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+}
+
+/* wishlists */
+
+.wishlist-icon{
+    font-size: 20px;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.removeFromWishlist{
+    width: 100%;
+    border-radius: none;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.cartAndTotalCost{
+    display: flex;
+}
+
+/* Total Cost */
+
+.total-cost{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.temporaryAmout{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shippingCharges{
+    display: flex;
+    justify-content: space-between;
+}
+
+.totalAmount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkuout{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.checkoutBtn{
+    width: 80%;
+    height: 2.5rem;
+    background-color: blue;
+    color: white;
+    border: 1px solid black;
+}
+
+.applyPromoDiv{
+    width: 80%;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    border: 1px solid black;
+    margin-left: 2.5rem;
+}
